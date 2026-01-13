@@ -343,9 +343,7 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 🔄 필터 관리")
 
-if st.sidebar.button("🔄 모든 필터 초기화", key="reset_all", use_container_width=True):
-    reset_filters()
-    st.rerun()
+st.sidebar.button("🔄 모든 필터 초기화", key="reset_all", use_container_width=True, on_click=reset_filters)
 
 # --- 선택 현황 요약 표시 ---
 st.sidebar.markdown("---")
